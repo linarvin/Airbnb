@@ -1,0 +1,337 @@
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+img {
+    vertical-align: top;
+}
+.container {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    
+}
+html {
+    font-size: 100%;
+}
+.responsive--img {
+    width: 100%;
+    height: auto;
+}
+.logo {
+    height: 2.5rem;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.header--icons button{
+    border: 0;
+    margin-right: 0.5rem;
+    background-color: white;
+}
+.header--icons img {
+    height: 2rem;
+    width: 2rem;
+
+} 
+nav.primary {
+    display: none;
+}
+nav.primary ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav.primary ul li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+main {
+    background-color: white;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.showcase--text {
+    padding-left: 3rem;
+}
+.showcase--text h1 {
+    margin-top: 1rem;
+}
+.showcase--text a {
+    text-decoration: none;
+    color: white;
+}
+/* Explore Nearby Stays Button */
+.ens {
+    border: 0;
+    border-radius: 1rem;
+    background-color: #FF5A5F;
+    padding: 0.75rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.locations {
+    margin-bottom: 1rem;
+}
+.locations h2 {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+}
+.location--list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.location {
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.location--img img {
+   
+    border-radius: 1rem;
+    
+}
+.location--text {
+    margin-top: 0.5rem;
+    
+}
+.rewards {
+    padding-top: 1rem;
+    padding-bottom: 70%;
+    background-image: url('../images/gift-card-illustration-mobile.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    border-radius: 1rem;
+}
+.rewards--text {
+    padding: 1rem 1rem 5rem 1rem;
+    text-align: center;
+}
+.rewards--text h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+.rewards--text p {
+    color: white;
+    margin-bottom: 1rem;
+}
+.rewards--text a {
+    text-decoration: none; 
+    color: black; 
+}
+.learn {
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.7rem; 
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: lightgray;
+    margin-top: 3rem;
+}
+
+nav.secondary{
+    display: none;
+}
+nav.secondary ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.media {
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+.socialMedia::after {
+    display: block;
+    margin-top: 1rem;
+    content: "Copyright 2020 Airbnb, Inc.";
+}
+.media h4 {
+    display: none;
+    
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.socialMedia img {
+    padding-left: 0.5rem;
+    height: 2.0rem;
+}
+
+/* ---- Desktop Verison ---- */
+
+@media all and (min-width: 1000px) {
+    .container {
+        width: 1000px;
+        margin: 0px auto;
+    }
+    .menuBtn {
+        display: none;
+    }
+    nav.primary {
+        display: block;
+    }
+    h1 {
+        font-size: 10rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .showcase {
+        
+
+        height: calc(100vh - 5rem);
+        
+        background-image: url(../images/airbnb-showcase.jpg);
+
+        /* scale a single image to be 100% of the site*/
+        background-size: cover; 
+
+        display: flex;
+        
+    }
+    .showcase--text {
+        color: white;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 3rem;
+        align-items: flex-start;
+    }
+    .showcase--text a {
+        color: black;
+    }
+    .showcase img {
+        display: none;
+    }
+    .ens {
+        background-color: white;
+        font-size: 1.5rem;
+        padding: 1rem 1.3rem;
+    }
+    .locations h2 {
+        font-size: 2.5rem;
+    }
+    .location {
+        width: 25%;
+        padding-bottom: 3rem;
+    }
+    .rewards {
+        padding-bottom: 0;
+        background-image: url('../images/gift-card-illustration-desktop.jpg');
+    }
+    .rewards--text {
+        width: 30%;
+        text-align: left;
+        padding-top: 9rem;
+        padding-left: 6rem;
+        padding-bottom: 9rem;
+    }
+    
+    nav.secondary{
+        display: block;
+        border-bottom: 1px solid #575757;
+        margin-bottom: 1rem;
+        
+    }
+    nav.secondary ul  {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+    nav.secondary ul li {
+        width: 20%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+    }
+    nav.secondary ul li a {
+        display: block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        color: black;
+        
+        
+    } 
+    nav.secondary ul ul {
+        display: block;
+        
+    }
+    nav.secondary ul ul li{
+        width: 100%;
+        font-weight: 400;
+    } 
+    nav.secondary ul ul li a {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .learn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .media {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .media h4 {
+        display: block;
+    }
+    .socialMedia::after {
+        
+        display: none;
+    }
+    .socialMedia img {
+        height: 1.5rem;
+    }
+}
